@@ -29,7 +29,8 @@ OUTPUT
 
 # perform_regression_permute
 What does the function do?
-Repeats perform_regression function N times with different splits by varying the seed
+1. Does perform_regression function 
+2. Repeates it N times with different splits by varying the seed
 
 INPUT
 1. mydtt - is the data
