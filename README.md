@@ -9,14 +9,14 @@ What does the function do?
 
 
 INPUT
-my_df - is the data
-split - the proportion of the testing/training set (e.g. .80)
-type_regres
+1. my_df - is the data
+2. split - the proportion of the testing/training set (e.g. .80)
+3. type_regres
    - "leapForward" - forward stepwise
    - "leapBackward" - backward stepwise
    - "ridge" - ridge regression (makes the coefficient close to zero but never 0)
    - "lasso" - lasso regression (makes the coefficients zero of some predictors)
-seed - a random number: different seed values result in different data splits
+4. seed - a random number: different seed values result in different data splits
 
 
 OUTPUT 
@@ -32,10 +32,10 @@ What does the function do?
 Repeats perform_regression function N times with different splits by varying the seed
 
 INPUT
-mydtt - is the data
-Niteration - how many times you want to permute
-data_split - the proportion of the testing/training set (e.g. .80)
-type_regres
+1. mydtt - is the data
+2. Niteration - how many times you want to permute
+3. data_split - the proportion of the testing/training set (e.g. .80)
+4. type_regres
    - "leapForward" - forward stepwise
    - "leapBackward" - backward stepwise
    - "ridge" - ridge regression (makes the coefficient close to zero but never 0)
