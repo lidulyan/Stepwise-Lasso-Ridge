@@ -8,15 +8,15 @@ What does the function do?
 3. Predicts the result based on the best model chosen on the training set (the lowest RMSE value)
 
 
-INPUT 
- my_df - is the data
- split - the proportion of the testing/training set (e.g. .80)
- type_regres
+INPUT
+my_df - is the data
+split - the proportion of the testing/training set (e.g. .80)
+type_regres
    - "leapForward" - forward stepwise
    - "leapBackward" - backward stepwise
    - "ridge" - ridge regression (makes the coefficient close to zero but never 0)
    - "lasso" - lasso regression (makes the coefficients zero of some predictors)
- seed - a random number: different seed values result in different data splits
+seed - a random number: different seed values result in different data splits
 
 
 OUTPUT 
