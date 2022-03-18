@@ -25,3 +25,23 @@ OUTPUT
  3. the best model formula 
  4. the plot of the important predictors
  5. the regression plot of prediction on the testing set
+
+
+# perform_regression_permute
+What does the function do?
+Repeats perform_regression function N times with different splits by varying the seed
+
+INPUT
+mydtt - is the data
+Niteration - how many times you want to permute
+data_split - the proportion of the testing/training set (e.g. .80)
+type_regres
+   - "leapForward" - forward stepwise
+   - "leapBackward" - backward stepwise
+   - "ridge" - ridge regression (makes the coefficient close to zero but never 0)
+   - "lasso" - lasso regression (makes the coefficients zero of some predictors)
+ 
+OUTPUT 
+1. data table with  RMSE, R, MSE values
+2. coefficient values of the best model that made the prediction on the testing set (there will be best model per each permutation)
+3. the array of seeds used to split data
